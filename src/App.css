@@ -13,13 +13,20 @@
 }
 body{
   font-family: 'Raleway';
-  background: #dde1e7;
+  background: linear-gradient(#ff758c,#764ba2);
 }
 .App
 {
   display: flex;
   width: 100vw;
   min-height: 100vh;
+}
+.glass{
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0px 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
 }
 nav
 {
@@ -28,12 +35,9 @@ nav
 	position: absolute;
 	top: 4%;
 	left: 4%; 
-	background: #dde1e7;
-	border-radius: 30px;
 	padding: 0;
   line-height: 1;
   text-align: center;
-  box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(18, 18, 19, 0.288);
 }
 .condiv
 {
@@ -42,28 +46,14 @@ nav
 	position: absolute;
 	top: 4%;
 	left: 28%; 
-	border-radius: 30px;
   line-height: 1;
   padding-left: 10px;
   padding-right: 10px;
-  background: #dde1e7;
-  box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(18, 18, 19, 0.288);
-}
-.neu1{
-  width: 180px;
-  height: 180px;
-  margin: 10px;
-  border-radius: 50%;
-  box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(18, 18, 19, 0.288);
-}
-.neu2{
-  position: absolute;
-  top: 2%;
-  left: 12%;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  box-shadow: inset -3px -3px 7px #ffffff73, inset 3px 3px 5px rgba(18, 18, 19, 0.288);
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0px 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
 }
 
 .home
@@ -78,13 +68,14 @@ nav
 {
   border-radius: 50%;
   width: 160px;
-  margin: 10px;
+  margin: 30px;
+  opacity: 90%;
 }
 .typingeffect
 {
   font-size: var(--typing-font);
   margin-bottom: 30px;
-  color: #6c757d;
+  color: #ffffffbf;
 }
 
 nav ul{
@@ -96,17 +87,16 @@ nav ul{
   text-align: center;
   list-style-type: none;
   text-decoration: none;
-  color: #969696 !important;
 }
 nav ul li
 {
   margin:15px;
   padding: 11px;
-  border-radius: 50px;
-  box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(18, 18, 19, 0.288);
+  border-radius: 10px;
+  color: white;
 }
 nav ul li:hover{
-  box-shadow: inset -3px -3px 7px #ffffff73, inset 3px 3px 5px rgba(18, 18, 19, 0.288);
+  background-color: #ffffff80;
 }
 
 a
@@ -121,7 +111,7 @@ a
 }
 p{
   font-size: var(--fontsize-p);
-  color: #6c757d;
+  color: #ffffffbf;
   margin: 10px;
 }
 h1{
@@ -129,8 +119,7 @@ h1{
   font-size: 3.3rem;
 }
 h2{
-  margin-top: 90%;
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 .abouthead{
   margin: 15px 10px;
@@ -164,8 +153,9 @@ h4{
   color: rgba(245, 108, 109,1);
   text-align: center;
   padding: 10px;
-  border-radius: 50px;
-  box-shadow: inset -3px -3px 7px #ffffff73, inset 3px 3px 5px rgba(18, 18, 19, 0.288);
+}
+.sk:hover{
+  background-color: #ffffff80;
 }
 .s2{
   left: 75%;
@@ -203,8 +193,6 @@ mark{
 .hr_line{
   width: 60px;
   height: 10px;
-  border-radius: 5px;
-  box-shadow: inset -3px -3px 7px #ffffff73, inset 3px 3px 5px rgba(18, 18, 19, 0.288);
 }
 .hr_inner{
   width: 30px;
@@ -223,15 +211,14 @@ mark{
   height: 5px;
   border-radius: 5px;
   margin: 7px;
+  margin-left: 15px;
 }
 .vr_line{
   width: 10px;
   height: 210px;
-  border-radius: 5px;
   position: absolute;
   top: 58%;
   left: 6.25%;
-  box-shadow: inset -3px -3px 7px #ffffff73, inset 3px 3px 5px rgba(18, 18, 19, 0.288);
 }
 .vr_inner{
   width: 10px;
@@ -252,15 +239,11 @@ mark{
 	position: absolute;
 	bottom: 4%;
 	right: 25%; 
-	background: #dde1e7;
-	border-radius: 5px;
 	display: flex;
 	justify-content: center;
   align-items: center;
-  box-shadow: inset -3px -3px 7px #ffffff73, inset 3px 3px 5px rgba(18, 18, 19, 0.288);
 }
 .btnsame{
-	background: #dde1e7;
 	height: 50px;
 	width: 50px;
 	margin: 15px 20px;
@@ -269,8 +252,6 @@ mark{
 	align-items: center;
 	justify-content: center;
 	transition: all 400ms;
-	box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(18, 18, 19, 0.288);
-	border: 1px solid rgba(255, 255, 255, 0.3);
 	position: relative;
 }
 .btnsame i{
@@ -279,32 +260,34 @@ mark{
   position: absolute;
   top: 20%;
   left: 25%;
-  color: #6c757d;
 }
-.btn1:hover i{
-  color: #43de85;
+.btn1 i{
+  color: #4078c0;
 }
-.btn2:hover i{
-  color:#0088ee;
+.btn2 i{
+  color:#00acee;
 }
-.btn3:hover i{
-  color:#3b5998;
+.btn3 i{
+  color:#0077b5;
 }
-.btn4:hover i{
-  color: #ee6644;
+.btn4 i{
+  color: #bc2a8d;
+}
+.btnsame:hover {
+  background-color: #ffffff80;
 }
 .active
 {
-  color: #0088ee;
-  box-shadow: inset -3px -3px 7px #ffffff73, inset 3px 3px 5px rgba(18, 18, 19, 0.288);
+  background-color: #ffffff80;
   font-weight: bolder;
 }
 .port_out{
   position: absolute;
   width: 38%;
   height: 30%;
-  border-radius: 10px;
-  box-shadow: inset -3px -3px 7px #ffffff73, inset 3px 3px 5px rgba(18, 18, 19, 0.288);
+}
+.port_out:hover{
+  background-color: #ffffff80;
 }
 .port1{
   top: 18%;
@@ -322,14 +305,7 @@ mark{
   top: 58%;
   left: 53%;
 }
-.port_in{
-  position: absolute;
-  width: 93%;
-  height: 89%;
-  margin: 3% 3%;
-  border-radius: 10px;
-  box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(18, 18, 19, 0.288);
-}
+
 .po1{
   width: 96%;
   height: 93%;
@@ -343,23 +319,25 @@ mark{
 }
 .inner3{
   margin: 3px 15px;
+  background: rgba(245, 108, 109,1);
+  width: 30px;
+  height: 5px;
+  border-radius: 5px;
 }
 .con_out{
+  position: absolute;
   width: 88%;
   top: 13%;
   left: 6%;
 }
-.con_in{
-  width: 98%;
-  height: 90.5%;
-  margin: 8px 8px;
-  border-radius: 10px;
-  box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(18, 18, 19, 0.288);
+.con_out:hover{
+  background-color: #ffffff80;
 }
 .co1{
-  width: 100%;
-  height: 100%;
+  width: 99%;
+  height: 99%;
   border-radius: 10px;
+  padding: 5px;
 }
 
 .back1{
@@ -368,14 +346,11 @@ mark{
 	position: absolute;
 	top: 4%;
 	right: 2%;
-	background: #dde1e7;
-	border-radius: 25px;
 	font-size: 22px;
   cursor: pointer;
-  box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(18, 18, 19, 0.288);
 }
 .back1:hover{
-  box-shadow: inset -3px -3px 7px #ffffff73, inset 3px 3px 5px rgba(18, 18, 19, 0.288);
+  background-color: #ffffff80;
 }
 .i1{
    position: absolute;
@@ -383,7 +358,8 @@ mark{
    left: 15px;
 }
 .i2{
-  color: #6c757d;
+  color: #ffffffbf;
+  padding-right: 10px;
 }
 .i3{
   color: rgba(245, 108, 109,1);
@@ -392,6 +368,8 @@ mark{
   top: 55%;
   left: 4%;
   z-index: 1;
+  background-color: #ffffffbf;
+  border-radius: 10px;
 }
 .back3{
   width: 210px;
@@ -399,16 +377,14 @@ mark{
   padding: 12px 0;
 	position: absolute;
 	top: 54%;
-	left: 22%;
-	background: rgba(245, 108, 109,1);
-	border-radius: 25px;
+  left: 22%;
+  color: black;
   font-size: 22px;
   text-align: center;
   cursor: pointer;
-  box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(18, 18, 19, 0.288);
 }
 .back3:hover{
-  box-shadow: inset -3px -3px 7px #ffffff73, inset 3px 3px 5px rgba(18, 18, 19, 0.288);
+  background-color: rgba(245, 108, 109,.5);
 }
 .back4{
   left: 56%;
@@ -430,8 +406,6 @@ mark{
   .sidebar
   {
     padding: 30px;
-    background: rgb(238,103,143);
-    background: linear-gradient(90deg, rgba(238,103,143,1) 50%, rgba(132,124,252,1) 80%);
   }
   .back1{
     right: 5%;
@@ -451,7 +425,6 @@ mark{
     left: 19%;
   }
   h2{
-    margin-top: 80%;
     font-size: 2.2rem;
   }
   p{
@@ -463,6 +436,7 @@ mark{
     left: 5%;
     width: 84.5%;
     height: 100%;
+    margin-bottom: 50px;
   }
   h1{
     text-align: center;
@@ -507,14 +481,15 @@ mark{
     left: 50%;
   }
   .subtopic{
-  margin: 10px !important;
+  margin: 10px!important;
   }
   .con_out{
+    width: 88%;
     height: 20%;
   }
   .con_in{
     width: 94%;
-    height: 86%;
+    height: 88%;
   }
   .back3{
     top: 44%;
@@ -526,6 +501,9 @@ mark{
   }
   .line2{
     margin: 1px 120px;
+  }
+  .inner2{
+    margin: 15px;
   }
   .port_out{
     width: 80%;

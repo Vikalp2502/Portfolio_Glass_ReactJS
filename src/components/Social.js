@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Social extends Component {
     render() {
         return (
-            <div class="social">
+            <div class="social glass">
             <div class="btnsame btn1">
 				<a href="https://github.com/vikalp2502" target="_blank"><i class="fa fa-github"></i></a>
 			</div>

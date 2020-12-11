@@ -13,56 +13,9 @@ import Contact from './contents/Contact';
 
 const GlobalStyle = createGlobalStyle`
   body{
-    background-color: ${props => props.theme.mode === 'dark' ? '#2c2d30' : '#dde1e7'};
-    color: ${props => props.theme.mode === 'dark' ? '#fff' : '#000'};
+  background: linear-gradient(${props => props.theme.mode === 'dark' ? '#868f96, #596164' : '(#ff758c,#764ba2'});
   }
-  .condiv{
-    background-color: ${props => props.theme.mode === 'dark' ? '#2c2d30' : '#dde1e7'};
-    color: ${props => props.theme.mode === 'dark' ? '#fff' : '#000'};
-  }
-  nav{
-    background-color: ${props => props.theme.mode === 'dark' ? '#2c2d30' : '#dde1e7'};
-    color: ${props => props.theme.mode === 'dark' ? '#fff' : '#000'};
-  }
-  a{
-    color: ${props => props.theme.mode === 'dark' ? '#fff' : '#000'};
-  }
-  .back1{
-    background-color: ${props => props.theme.mode === 'dark' ? '#2c2d30' : '#dde1e7'};
-    color: ${props => props.theme.mode === 'dark' ? '#fff' : '#000'};
-  }
-  .social{
-    background-color: ${props => props.theme.mode === 'dark' ? '#2c2d30' : '#dde1e7'};
-    color: ${props => props.theme.mode === 'dark' ? '#fff' : '#000'};
-  }
-  .btnsame{
-    background-color: ${props => props.theme.mode === 'dark' ? '#2c2d30' : '#dde1e7'};
-    color: ${props => props.theme.mode === 'dark' ? '#fff' : '#000'};
-  }
-  .neu1{
-    background-color: ${props => props.theme.mode === 'dark' ? '#2c2d30' : '#dde1e7'};
-    color: ${props => props.theme.mode === 'dark' ? '#fff' : '#000'};
-  }
-  .neu2{
-    background-color: ${props => props.theme.mode === 'dark' ? '#2c2d30' : '#dde1e7'};
-    color: ${props => props.theme.mode === 'dark' ? '#fff' : '#000'};
-  }
-  .hr_line{
-    background-color: ${props => props.theme.mode === 'dark' ? '#2c2d30' : '#dde1e7'};
-    color: ${props => props.theme.mode === 'dark' ? '#fff' : '#000'};
-  }
-  .hr_inner{
-    background-color: ${props => props.theme.mode === 'dark' ? '#2c2d30' : '#dde1e7'};
-    color: ${props => props.theme.mode === 'dark' ? '#fff' : '#000'};
-  }
-  .vr_line{
-    background-color: ${props => props.theme.mode === 'dark' ? '#2c2d30' : '#dde1e7'};
-    color: ${props => props.theme.mode === 'dark' ? '#fff' : '#000'};
-  }
-  .vr_inner{
-    background-color: ${props => props.theme.mode === 'dark' ? '#2c2d30' : '#dde1e7'};
-    color: ${props => props.theme.mode === 'dark' ? '#fff' : '#000'};
-  }
+
 `
 
 function App() {
@@ -70,7 +23,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <>
-      <GlobalStyle />
+    <GlobalStyle />
     <Router>
     <div className="App">
     <Navbar />
@@ -86,7 +39,7 @@ function App() {
     <Route path="/contact">
     <Contact />
     </Route>
-    <div class="back1" onClick={e => setTheme(
+    <div class="back1 glass" onClick={e => setTheme(
       theme.mode === 'dark' ? {mode: 'light'} : {mode: 'dark'}
     )}><i class={theme.mode === 'dark' ? "fa fa-sun i1" : "fa fa-moon i1"}></i></div>
     </div>

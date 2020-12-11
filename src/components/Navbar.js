@@ -21,12 +21,8 @@ class Navbar extends Component {
     };
     render() {
         return (
-            <nav>
-            <div className="neu2">
-                <div className="neu1">
-                <img src={profilepic} className="profilepic"></img>
-                </div>
-            </div>
+            <nav className="glass">
+            <img src={profilepic} className="profilepic"></img>
             <h2>Vikalp <mark>Kaushik</mark></h2>
             <p>Full Stack Developer</p>
             <ul>

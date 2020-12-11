@@ -5,8 +5,8 @@ class About extends Component {
     render() {
         return (
             <div className="condiv">
-            <h2 className="subtopic">About Me</h2>
-            <div className="hr_line line2"><div className="inner2"></div></div>
+            <h1 className="subtopic">About Me</h1>
+            <div className="hr_line line2 glass"><div className="inner2"></div></div>
             <h2 className="abouthead">Vikalp <mark className="mark2">Kaushik</mark></h2>
             <p>Full Stack Developer</p>
             <br></br>
@@ -22,7 +22,7 @@ class About extends Component {
                 <div class="back1 back2"><i class="fa fa-book i1 i3"></i></div>
             </div>
             <h3>Education</h3>
-            <div className="vr_line">
+            <div className="vr_line glass">
                 <div className="vr_inner inn1"></div>
                 <div className="vr_inner inn2"></div>
             </div>
@@ -34,12 +34,12 @@ class About extends Component {
             <p className="p1"><i class="fa fa-calendar i2"></i>May 2017</p>
 
             <h3 class="sk_head">Skills</h3>
-            <div class="sk">HTML</div>
-            <div class="sk s2">CSS</div>
-            <div class="sk s3">JavaScript</div>
-            <div class="sk s4">React</div>
-            <div class="sk s5">Node</div>
-            <div class="sk s6">Python</div>
+            <div class="sk glass">HTML</div>
+            <div class="sk s2 glass">CSS</div>
+            <div class="sk s3 glass">JavaScript</div>
+            <div class="sk s4 glass">React</div>
+            <div class="sk s5 glass">Node</div>
+            <div class="sk s6 glass">Python</div>
             </div>
             )
         }
